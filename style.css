@@ -1,3 +1,23 @@
-body {
+h3 {
+  color: white;
+  letter-spacing: -1px;
+  word-spacing: 5px;
+  text-decoration: dashed;
+  text-shadow: 3px 3px 3px 
+} 
+ body {
+  background-color: #556F7A;
+}
+
+img:hover {
+  width: 350px;
+    border:  10px;
+  border-radius: 65%;
+}
+
+h3:hover{
+  font-size: 30px;
+}
+
 
 }
