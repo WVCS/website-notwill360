@@ -1,48 +1,68 @@
-h3 {
-  color: white;
-  letter-spacing: -1px;
-  word-spacing: 5px;
-  text-decoration: dashed;
-  text-shadow: 3px 3px 3px 
-} 
- body {
-  background-color: #556F7A;
-}
-
+/* Navigation styles */
 nav {
-  list-style=type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: #39393A;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-li {
-  float:left;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-li a {
+nav li {
+  float: left;
+}
+
+nav li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-li a:hover {
-  background-color: black;
-  color:white 
+nav li a:hover {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+/* Add padding to content to account for fixed nav */
+.content {
+  padding-top: 60px;
+}
+
+/* Existing styles */
+h3 {
+  color: white;
+  letter-spacing: -1px;
+  word-spacing: 5px;
+  text-decoration: dashed;
+  text-shadow: 3px 3px 3px;
+} 
+
+body {
+  background-color: #556F7A;
+  margin: 0;
 }
 
 img:hover {
   width: 350px;
-    border:  10px;
+  border: 10px;
   border-radius: 65%;
+  transition: all 0.3s ease;
 }
 
-h3:hover{
+h3:hover {
   font-size: 30px;
+  transition: all 0.3s ease;
 }
