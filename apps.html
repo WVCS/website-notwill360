@@ -1,76 +1,32 @@
-body {
-  background-color: #333333; /* Dark grey background */
-  color: white;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>My Apps - Will's Website</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="apps.html">Apps</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h1>My Code.org Apps</h1>
 
-.apps-title {
-  text-align: center;
-  margin: 20px 0;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
+      <div class="apps-grid">
 
-.apps-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 20px;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.app-wrapper {
-  background-color: #444444;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
-}
-
-.app-wrapper:hover {
-  transform: translateY(-5px);
-}
-
-nav {
-  background-color: #39393A;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav li {
-  float: left;
-}
-
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-nav li a:hover {
-  background-color: #2a2a2a;
-  color: white;
-}
-
-.content {
-  padding-top: 60px;
-}
+        <div class="app-frame">
+          <iframe width="392" height="620" style="border: none;" src="https://studio.code.org/projects/applab/k_BpY2L3jHRl_kCfVfVqn8U2SWTzUTPFtSjcc48kkgH/embed?nosource"></iframe>
+        </div>
+        
+        <div class="app-frame">
+          <iframe width="392" height="620" style="border: none;" src="https://studio.code.org/projects/applab/5gmQMQg6nu7u9u2mqNzO42zFtXYOfCLwcbUTjLzT7ln/embed?nosource"></iframe>
+        </div>
+        
+        <div class="app-frame">
+          <iframe width="392" height="620" style="border: none;" src="https://studio.code.org/projects/applab/yLAs6OcNccuE0lFknqBKdbY0z6jHrNOMvTtGluzrUEQ/embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
