@@ -9,6 +9,34 @@ h3 {
   background-color: #556F7A;
 }
 
+nav {
+  list-style=type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #39393A;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+li {
+  float:left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: black;
+  color:white 
+}
+
 img:hover {
   width: 350px;
     border:  10px;
