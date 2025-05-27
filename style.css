@@ -2,31 +2,36 @@ body {
   background-color: #556F7A;
   margin: 0;
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 h3 {
   color: white;
   letter-spacing: -1px;
   word-spacing: 5px;
-  text-decoration: dashed;
   text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
   font-size: 28px;
+  margin-top: 80px;
   transition: all 0.3s ease;
+  display: block;
 }
 
 h3:hover {
   font-size: 32px;
 }
 
-img {
+.content img {
   width: 400px;
   transition: all 0.3s ease;
-  border-radius: 8px;
+  border-radius: 0;
+  display: block;
+  margin: 20px auto;
 }
 
-img:hover {
+.content img:hover {
   width: 350px;
-  border-radius: 65%;
+  border-radius: 50% !important;
+  transform: rotate(5deg);
 }
 
 nav {
@@ -34,14 +39,14 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 10px 0;
+  padding: 15px 0;
   z-index: 100;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
-  text-align: center;
+  list-style: none;
 }
 
 nav li {
@@ -53,25 +58,19 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 8px 16px;
 }
 
 nav a:hover {
   background-color: #555;
+  border-radius: 4px;
 }
 
 .content {
   padding-top: 70px;
-  text-align: center;
 }
 
-.apps-title {
-  color: white;
-  font-size: 2rem;
-  margin-top: 20px;
-}
-
+/* Apps page styles */
 .apps-grid {
   display: flex;
   flex-wrap: wrap;
@@ -84,15 +83,4 @@ nav a:hover {
   background: #444;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-@media (max-width: 600px) {
-  nav li {
-    display: block;
-    margin: 10px 0;
-  }
-  img {
-    width: 300px;
-  }
 }
